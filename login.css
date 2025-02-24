@@ -1,0 +1,236 @@
+/* General body and container styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/736x/97/e6/16/97e61610cb784f96cbeeaba02d9e3fa6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.border-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-weight: bold;
+}
+
+.underline {
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    font-size: 14px;
+    color: #333;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Forgot Password */
+.forgot-password {
+    text-align: right;
+}
+
+.forgot-password a {
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Or login with text */
+.or-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.or-login p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.social-icons .google {
+    background-color: #db4437;
+}
+
+.social-icons .facebook {
+    background-color: #3b5998;
+}
+
+.social-icons .twitter {
+    background-color: #00acee;
+}
+
+/* Signup Section */
+.signup {
+    text-align: center;
+}
+
+.signup p {
+    font-size: 14px;
+}
+
+.signup a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsive design */
+
+/* For devices with width 768px or smaller (tablets) */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .border-box {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input-section label {
+        font-size: 12px;
+    }
+
+    .input-section input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .social-icons a {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* For devices with width 480px or smaller (mobiles) */
+@media (max-width: 480px) {
+    .login-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .border-box {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .input-section label {
+        font-size: 12px;
+    }
+
+    .input-section input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .forgot-password {
+        text-align: left;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .or-login p {
+        font-size: 12px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 12px;
+        padding: 8px 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .signup p {
+        font-size: 12px;
+    }
+}

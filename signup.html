@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - HRMS Application</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="border-box">
+            <!-- Signup Heading -->
+            <h1>Signup</h1>
+
+            <div class="input-group">
+                <!-- Name Input -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <!-- Email Input -->
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="Enter your email id" required>
+            </div>
+
+            <div class="input-group">
+                <!-- Password Input -->
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="input-group">
+                <!-- Confirm Password Input -->
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <!-- Signup Button -->
+            <button class="signup-button" onclick="signup()">Signup</button>
+
+            <!-- Already have an account link -->
+            <div class="already-have-account">
+                <p>Already have an account? <a href="../login/login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

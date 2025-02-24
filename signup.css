@@ -1,0 +1,153 @@
+/* General body and container styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://i.pinimg.com/736x/97/e6/16/97e61610cb784f96cbeeaba02d9e3fa6.jpg');
+    background-size: cover; /* Makes sure the image covers the whole screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.border-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background with transparency */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Signup Button */
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Already have an account? */
+.already-have-account {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.already-have-account p {
+    font-size: 14px;
+}
+
+.already-have-account a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.already-have-account a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens with a maximum width of 768px (Tablets and below) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .border-box {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .signup-button {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .already-have-account p {
+        font-size: 12px;
+    }
+}
+
+/* For screens with a maximum width of 480px (Mobile phones) */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .border-box {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .signup-button {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .already-have-account p {
+        font-size: 12px;
+    }
+}

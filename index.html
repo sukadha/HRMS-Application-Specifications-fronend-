@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include AOS library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side with borderbox and buttons -->
+        <div class="left-side" data-aos="fade-right">
+            <div class="border-box" data-aos="fade-right" data-aos-duration="2000">
+                <!-- Updated title -->
+                <h1>HRMS Application<br>Specifications</h1>
+                <div class="buttons">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <!-- Updated button to redirect to login page -->
+                        <button class="login" onclick="goToLogin()">Login</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <!-- Sign-up button (you can implement similar functionality for this too) -->
+                        <button class="signup" onclick="signup()">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side with image -->
+        <div class="right-side" data-aos="zoom-in-up">
+            <img src="https://i.pinimg.com/736x/4f/f8/5f/4ff85fb185f3ae9a50b9365af7763826.jpg" alt="Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Include AOS JS library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();  // Initialize AOS
+
+        // Function to redirect to the login page
+        function goToLogin() {
+            window.location.href = "login/login.html";  // Ensure this path is correct
+        }
+
+        // Signup function (you can add redirection here as well if needed)
+        function signup() {
+            window.location.href = "signup/signup.html";  // You can modify the path here
+        }
+    </script>
+</body>
+</html>
